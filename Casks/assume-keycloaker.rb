@@ -3,14 +3,12 @@ cask "assume-keycloaker" do
   version "0.3.2"
   sha256 "a2a825100d7ecd407d796b261b0369ad72d4a560996978b8482c80ccca62db14"
 
-  url "https://github.com/gtalmor/assume-keycloaker/releases/download/v#{version}/AssumeKeycloaker-#{version}.zip"
+  url "https://github.com/gtalmor/homebrew-tap/releases/download/assume-keycloaker-v#{version}/AssumeKeycloaker-#{version}.zip"
   name "Assume Keycloaker"
-  desc "Menu bar app that keeps Keycloak (saml2aws) and AWS SSO sessions alive"
-  homepage "https://github.com/gtalmor/assume-keycloaker"
+  desc "Menu bar app that keeps your work sessions signed in"
+  homepage "https://github.com/gtalmor/homebrew-tap"
 
   depends_on macos: :sequoia
-  # The CLIs the app drives; Homebrew installs them alongside.
-  depends_on formula: ["awscli", "saml2aws", "kubernetes-cli"]
 
   app "Assume Keycloaker.app"
 
